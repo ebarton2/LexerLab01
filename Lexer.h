@@ -42,7 +42,7 @@ public:
 
 	void endOfFile() {
 		++tokenCount;
-		++line;
+		//++line;
 		string tempString = "";
 		Tokenizer caller(tempString, line);
 		tokens.push_back(caller.endOfTimes(tempString, line));

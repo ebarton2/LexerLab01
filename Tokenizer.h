@@ -98,7 +98,7 @@ public:
 			input = input.substr(5, input.size() - 5);
 		}
 
-		else if (input.substr(0, 7) == "Queries" && !isalpha(input[5]) && !isdigit(input[5])) { // Checks for Queries 12
+		else if (input.substr(0, 7) == "Queries" && !isalpha(input[7]) && !isdigit(input[7])) { // Checks for Queries 12
 			tokenString = "Queries";
 			tempToken.setToken(tokenString, line, 12);
 			input = input.substr(7, input.size() - 7);

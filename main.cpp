@@ -17,7 +17,7 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
 	VS_MEM_CHECK;
-	cout << "Input file: " << argv[1] << endl;
+	//cout << "Input file: " << argv[1] << endl;
 	ifstream in(argv[1]);
 	if (!in) {
 		cerr << "Unable to open " << argv[1] << " for input";
