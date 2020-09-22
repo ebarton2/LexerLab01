@@ -188,7 +188,7 @@ public:
 							tempString = tempString + input[i] + input[i + 1];
 							int code = 15;
 							tempToken.setToken(tempString, tempNum, code);
-							if (input[i + 2] == NULL) {
+							if (input[i + 2] == EOF) {
 								input = "";
 								break;
 							}

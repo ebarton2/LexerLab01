@@ -3,7 +3,7 @@
 #include <crtdbg.h>
 #define VS_MEM_CHECK _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 #else
-#define VS_MEM_CHECK;
+#define VS_MEM_CHECK
 #endif
 
 #include <iostream>
