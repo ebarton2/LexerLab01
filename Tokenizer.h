@@ -159,11 +159,11 @@ public:
 			}
 			tokenString = tempStr;
 			tempToken.setToken(tokenString, tempLine, code);
-			if (input[i] != NULL) {
-				input = input.substr(i + 1, input.size() - i);
+			if (input[i] != '\0') {  // THIS HAS BEEN THROWING AN EXCEPTION
+				input = input.substr(i + 1, input.size() - i);  // SWAP THIS <----   
 			}
 			else {
-				input = input.substr(i, input.size() - i);
+				input = input.substr(i, input.size() - i); // WITH THIS <----
 			}
 		}
 
@@ -219,7 +219,7 @@ public:
 		}
 
 		// Not a Token Identifier
-		else if (isspace(input[0]) || input[0] == '""') {
+		else if (isspace(input[0]) /*|| input[0] == '""'*/) { // COMMENTED OUT TO SAVE THE CODE ITSELF
 			input = input.substr(1, input.size() - 1);
 		}
 
