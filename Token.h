@@ -72,6 +72,12 @@ public:
 		}
 	};
 
+	void endOfFile(int& lineNum) {
+		value = "";
+		line = lineNum;
+		token = "EOF";
+	}
+
 	std::string toString() {
 		return "(" + token + ",\"" + value + "\"," + to_string(line) + ")";
 	};

@@ -11,41 +11,42 @@ class Lexer
 {
 private:
 	vector<Token> tokens;
-	string input;
+	string inputString;
 	int line;
 	int tokenCount;
+	Tokenizer myTokenizer;
 public:
 	Lexer() { line = 0; tokenCount = 0; }
 	~Lexer() {}
 
-	void setLine(string& input, int& line) {
-		this->input = input;
-		this->line = line;
-	}
+	void getTokens(string& input, int& lineNum) { // Generate Tokens from input
+		inputString = input;
+		line = lineNum;
 
-	void getTokens() { // Generate Tokens from input
-		Tokenizer myTokenizer(input, line);
-		do {
+		while (input.size() > 0) {
 			if (input[0] == '\n') {
 				input = input.substr(1, input.size() - 1);
-				++line;
+				++lineNum;
+				line = lineNum;
 			}
-			else if (isspace(input[0])) {
+			else if (input[0] == ' ') {
+				input = input.substr(1, input.size() - 1);
+			}
+			else if (input[0] == '\t') {
 				input = input.substr(1, input.size() - 1);
 			}
 			else {
-				tokens.push_back(myTokenizer.getNextToken(input, line));
+				tokens.push_back(myTokenizer.getNextToken(input, lineNum));
 				++tokenCount;
 			}
-		} while (input.size() > 0);
+		}
+
+
 	}
 
 	void endOfFile() {
 		++tokenCount;
-		//++line;
-		string tempString = "";
-		Tokenizer caller(tempString, line);
-		tokens.push_back(caller.endOfTimes(tempString, line));
+		tokens.push_back(myTokenizer.endOfTimes(line));
 	}
 
 	void printTokens() {
