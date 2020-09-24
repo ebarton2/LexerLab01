@@ -129,11 +129,13 @@ public:
 				if (input[i] == EOF) { // anything other than '
 					code = 17;
 					input = input.substr(i, input.size() - i);
+					line = lineNum;
 					break;
 				}
 				else if (input[i] != '\'') {
 					if (input[i] == '\n') {
 						++lineNum;
+						line = lineNum;
 					}
 					tempStr.push_back(input[i]);
 				}
@@ -158,6 +160,7 @@ public:
 			}
 			tokenString = tempStr;
 			tempToken.setToken(tokenString, tempLine, code);
+			line = lineNum;
 			if (input[i] != '\0') {  // THIS HAS BEEN THROWING AN EXCEPTION
 				input = input.substr(i + 1, input.size() - i);  // SWAP THIS <----   
 			}

@@ -37,6 +37,7 @@ public:
 			}
 			else {
 				tokens.push_back(myTokenizer.getNextToken(input, lineNum));
+				line = lineNum;
 				++tokenCount;
 			}
 		}
