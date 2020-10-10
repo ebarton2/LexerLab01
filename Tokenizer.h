@@ -168,7 +168,7 @@ public:
 				input = input.substr(i, input.size() - i); // WITH THIS <----
 			}
 		}
-
+		// ----------------------------------------------------------------------------------
 		else if (input[0] == '#') { // Checks for comments 15
 			if (input[1] == '|') {
 				int tempNum = lineNum;
@@ -218,8 +218,9 @@ public:
 				tempToken.setToken(tempString, lineNum, code);
 				input = input.substr(i, input.size() - i);
 			}
-		}
 
+		}
+		//------------------------------------------------------------------------------------------
 		// Not a Token Identifier
 		else if (isspace(input[0]) /*|| input[0] == '""'*/) { // COMMENTED OUT TO SAVE THE CODE ITSELF
 			input = input.substr(1, input.size() - 1);

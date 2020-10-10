@@ -10,12 +10,13 @@ private:
 	string value;
 	int line;
 	string token;
+	int tokenCode;
 public:
-	Token(void) { line = 1; };
+	Token(void) { line = 1; tokenCode = 0; };
 	~Token(void) {};
 
 	void setToken(std::string& input, int& line, int code) {
-		value = input; this->line = line;
+		value = input; this->line = line; tokenCode = code;
 		if (code == 0) {
 			token = "COMMA";
 		}
@@ -26,10 +27,10 @@ public:
 			token = "Q_MARK";
 		}
 		else if (code == 3) {
-			token = "LEFT_PAREN";
+			token = "LEFT_PAREN"; // (
 		}
 		else if (code == 4) {
-			token = "RIGHT_PAREN";
+			token = "RIGHT_PAREN"; // )
 		}
 		else if (code == 5) {
 			token = "COLON";
@@ -71,11 +72,32 @@ public:
 			token = "UNDEFINED";
 		}
 	};
+	string getTokenType() {
+		return token;
+	}
+
+	int getTokenCode() {
+		return tokenCode;
+	}
+
+	string getTokenValue() {
+		return value;
+	}
 
 	void endOfFile(int& lineNum) {
 		value = "";
 		line = lineNum;
 		token = "EOF";
+		tokenCode = 16;
+	}
+
+	bool isComment() {
+		if (token == "COMMENT") {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 
 	std::string toString() {

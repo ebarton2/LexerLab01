@@ -140,7 +140,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="DatalogProgram.h" />
+    <ClInclude Include="ExpressionPara.h" />
     <ClInclude Include="Lexer.h" />
+    <ClInclude Include="Parameter.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="Predicate.h" />
+    <ClInclude Include="Rule.h" />
+    <ClInclude Include="SimplePara.h" />
     <ClInclude Include="Token.h" />
     <ClInclude Include="Tokenizer.h" />
   </ItemGroup>

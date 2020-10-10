@@ -1,2 +1,2 @@
-C:\Users\victo\source\repos\Project2\Debug\Project2.exe
-C:\Users\victo\source\repos\Project2\Debug\Project2.pdb
+C:\Users\victo\source\repos\Project2\Debug\235 Project.exe
+C:\Users\victo\source\repos\Project2\Debug\235 Project.pdb

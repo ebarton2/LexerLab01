@@ -1,2 +1,42 @@
-﻿  main.cpp
-  Project2.vcxproj -> C:\Users\victo\source\repos\Project2\Debug\Project2.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Project2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+C:\Users\victo\source\repos\Project2\SimplePara.h(9,30): error C2504: 'Parameter': base class undefined
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(9,40): error C2504: 'Parameter': base class undefined
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(12,11): error C2143: syntax error: missing ';' before '*'
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(12,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(12,26): error C2238: unexpected token(s) preceding ';'
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(13,11): error C2143: syntax error: missing ';' before '*'
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(13,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(13,27): error C2238: unexpected token(s) preceding ';'
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(29,4): error C2065: 'leftParameter': undeclared identifier
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(30,10): error C2065: 'leftParameter': undeclared identifier
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(35,4): error C2065: 'leftParameter': undeclared identifier
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(37,10): error C2065: 'leftParameter': undeclared identifier
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(59,4): error C2065: 'rightParameter': undeclared identifier
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(60,10): error C2065: 'rightParameter': undeclared identifier
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(65,4): error C2065: 'rightParameter': undeclared identifier
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(66,10): error C2065: 'rightParameter': undeclared identifier
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(111,11): error C2065: 'leftParameter': undeclared identifier
+C:\Users\victo\source\repos\Project2\ExpressionPara.h(115,11): error C2065: 'rightParameter': undeclared identifier
+C:\Users\victo\source\repos\Project2\Rule.h(16,25): error C3646: 'headPredicate': unknown override specifier
+C:\Users\victo\source\repos\Project2\Rule.h(16,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\victo\source\repos\Project2\Rule.h(17,9): error C2065: 'Predicate': undeclared identifier
+C:\Users\victo\source\repos\Project2\Rule.h(17,2): error C2923: 'std::vector': 'Predicate' is not a valid template type argument for parameter '_Ty'
+C:\Users\victo\source\repos\Project2\Rule.h(17,2): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector(413): message : see declaration of 'std::vector'
+C:\Users\victo\source\repos\Project2\Rule.h(20,6): error C2512: 'std::vector': no appropriate default constructor available
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector(413,1): message : see declaration of 'std::vector'
+C:\Users\victo\source\repos\Project2\Rule.h(25,4): error C2065: 'headPredicate': undeclared identifier
+C:\Users\victo\source\repos\Project2\Rule.h(42,5): error C2065: 'Predicate': undeclared identifier
+C:\Users\victo\source\repos\Project2\Rule.h(42,15): error C2146: syntax error: missing ';' before identifier 'tempPredicate'
+C:\Users\victo\source\repos\Project2\Rule.h(42,15): error C2065: 'tempPredicate': undeclared identifier
+C:\Users\victo\source\repos\Project2\Rule.h(43,46): error C2065: 'tempPredicate': undeclared identifier
+C:\Users\victo\source\repos\Project2\Rule.h(44,30): error C2065: 'tempPredicate': undeclared identifier
+C:\Users\victo\source\repos\Project2\Predicate.h(92,1): error C2440: 'initializing': cannot convert from 'SimplePara *' to 'Parameter *'
+C:\Users\victo\source\repos\Project2\Predicate.h(92,26): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+C:\Users\victo\source\repos\Project2\Predicate.h(98,1): error C2440: 'initializing': cannot convert from 'ExpressionPara *' to 'Parameter *'
+C:\Users\victo\source\repos\Project2\Predicate.h(98,26): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+C:\Users\victo\source\repos\Project2\Predicate.h(229,1): error C2440: 'initializing': cannot convert from 'SimplePara *' to 'Parameter *'
+C:\Users\victo\source\repos\Project2\Predicate.h(229,25): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+C:\Users\victo\source\repos\Project2\Predicate.h(233,1): error C2440: 'initializing': cannot convert from 'ExpressionPara *' to 'Parameter *'
+C:\Users\victo\source\repos\Project2\Predicate.h(233,25): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast

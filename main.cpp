@@ -3,6 +3,7 @@
 #include <string>
 #include <sstream>
 #include "Lexer.h"
+#include "Parser.h"
 
 using namespace std;
 
@@ -31,7 +32,18 @@ int main(int argc, char* argv[]) {
 	}
 	myLexer.getTokens(line, lineNum);
 	myLexer.endOfFile();
-	myLexer.printTokens();
+
+
+	
+
+	//myLexer.printTokens();
+	//cout << "-------------------------" << endl;
+
+	Parser myDatalogProgram(myLexer);
+	if (myDatalogProgram.parse() == true) {
+		cout << "Success!" << endl;
+		myDatalogProgram.print();
+	}
 
 	return 0;
 }
